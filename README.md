@@ -2,5 +2,5 @@
 
 ## Datasets
 
-1. Canadian Institute for Cybersecurity Dataset<br>
-    Malware memory analysis: https://www.unb.ca/cic/datasets/malmem-2022.html 
+1. DDOS Attack Network Logs<br>
+    https://www.kaggle.com/datasets/jacobvs/ddos-attack-network-logs
