@@ -77,6 +77,6 @@ def main():
     corr_scatter(data, low_pairs) # might take a while to load
 
 
-
 if __name__ == "__main__":
     main()
+    
