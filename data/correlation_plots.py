@@ -50,7 +50,7 @@ def corr_scatter(data, pairs):
         ax.set_title(f"{x} vs {y}")
         ax.set_xlabel("")
         ax.set_ylabel("")
-        ax.get_legend().set_visible(False)
+        ax.get_legend().set_visible(False) # removes legend for each subplot
         
         if handles is None or labels is None: # get legend data
             handles, labels = ax.get_legend_handles_labels()
