@@ -1,14 +1,20 @@
 import numpy as np
 import torch
 import torch.nn as nn
+import matplotlib.pyplot as plt
 import torch.optim as optim
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 
 
-X = np.load('X_processed.npy')  
-y = np.load('y_processed.npy')  
+
+try:
+    X = np.load('data/X_processed.npy')  
+    y = np.load('data/y_processed.npy')  
+    print("dataset was loaded")
+except Exception as e:
+    print("failed to load data", e)
 
 
 #split the data into training and testing data 
@@ -83,3 +89,11 @@ with torch.no_grad():
         all_labels.extend(batch_y.numpy())
 
 print(classification_report(all_labels, all_preds, target_names=["Normal", "Attack"]))
+
+
+#add a confusion matrix to visualize the precision and recall of the model
+cm = confusion_matrix(all_labels, all_preds)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=["Normal", "Attack"])
+disp.plot(cmap=plt.cm.Blues)
+plt.title("Confusion Matrix")
+plt.show()
