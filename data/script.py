@@ -164,11 +164,7 @@ def network_attack_preprocessing_pipeline(file_path):
 
 if __name__ == "__main__":
     #Change path here to test on short file
-<<<<<<< Updated upstream:data/script.py
     file_path = 'sample-data.csv'
-=======
-    file_path = 'final-dataset.arff'
->>>>>>> Stashed changes:script.py
  
     results = network_attack_preprocessing_pipeline(file_path)
     np.save('X_processed.npy', results['X'])
