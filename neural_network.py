@@ -48,7 +48,7 @@ class BinaryClassifier(nn.Module):
     def forward(self, x):
         return self.net(x)
 
-model = BinaryClassifier(input_dim=11)
+model = BinaryClassifier(input_dim=12)
 
 #training the neural network 
 criterion = nn.BCELoss()
