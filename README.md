@@ -1,4 +1,5 @@
 Project Summary
+
 Our AI system aims to solve the problem of identifying network attacks using DDoS network attack logs. Our model will take network packet features, such as packet IDs, types, size, rate, and duration, etc as the input, and it will output a binary variable of whether it is safe or unsafe. We will build a machine learning classifier using supervised learning techniques, such as decision trees, KNN, and neural networks, as our main model.
 
 
