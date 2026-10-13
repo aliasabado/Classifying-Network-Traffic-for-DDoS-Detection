@@ -1,4 +1,4 @@
-# DDoS Attack Detection System
+# Classifying Network Traffic for DDoS Detection
 
 ## Project Summary
 
@@ -84,3 +84,6 @@ The system requires Python 3.7+ with standard scientific computing packages. Ins
 - **torch** for neural network implementation
 - **pandas** and **numpy** for data processing
 - **scipy** for extended file format support
+
+
+**Note:** This repository was migrated from my university's GitHub Enterprise account to my personal GitHub account.
